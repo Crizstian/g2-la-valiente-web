@@ -3252,191 +3252,84 @@ table.hover tr:nth-of-type(even):hover {
 .top-bar-right {
   float: right; }
 
-@-webkit-keyframes roll {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  50% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg); }
-  100% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg); } }
-
-@keyframes roll {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  50% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg); }
-  100% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg); } }
-
 .data-oulet {
   font-family: 'PT Sans', sans-serif;
   background-image: linear-gradient(to bottom, #FFFFFF, #EBEBEB); }
 
-/*animation element sliding left*/
-.animation-element.slide-left {
-  opacity: 0;
-  transition: all 1000ms linear;
-  -webkit-transform: translate3d(-100px, 0px, 0px);
-  transform: translate3d(-100px, 0px, 0px); }
-
-.animation-element.slide-left.in-view {
-  opacity: 1;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px); }
-
-.animation-element.slide-right {
-  opacity: 0;
-  transition: all 1000ms linear;
-  -webkit-transform: translate3d(100px, 0px, 0px);
-  transform: translate3d(100px, 0px, 0px); }
-
-.animation-element.slide-right.in-view {
-  opacity: 1;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px); }
-
-/******************************************************************************/
-/*bounce up animation for the subject*/
-.animation-element.bounce-up {
-  opacity: 0;
-  transition: all 1000ms ease-out;
-  -webkit-transform: translate3d(0px, 200px, 0px);
-  transform: translate3d(0px, 200, 0px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.animation-element.bounce-up.in-view {
-  opacity: 1;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transform: translate3d(0px, 0px, 0px); }
-
 @media only screen {
   .header .callout {
-    border: none;
+    background: none;
+    border: none; }
+  .header .menu a {
+    padding-top: 1.1em;
+    font-size: 1.4rem;
+    font-family: 'PT Sans', sans-serif;
+    color: #2D2D2D;
+    text-transform: uppercase;
+    border-bottom: 0.02em solid #C59C64; }
+    .header .menu a:hover {
+      border-bottom: 0.1em solid #CC9029; }
+    .header .menu a i {
+      padding-right: 1em; }
+  .header .top-bar {
     background: none; }
-  .header .men .top-bar {
-    background: none; }
-  .header .men .menu {
-    position: relative;
-    background: none; }
-    .header .men .menu a {
-      padding: 1em;
-      font-family: 'PT Sans', sans-serif;
-      font-size: 1.4rem;
-      color: #2D2D2D;
-      text-transform: uppercase; }
-      .header .men .menu a:hover {
-        font-weight: bold; }
-      .header .men .menu a i {
-        padding-right: 1.5em; }
-  .header .title-bar {
-    background: #cf992e; }
-    .header .title-bar ul {
+    .header .top-bar ul {
       background: none; }
-  .header .img {
-    width: auto;
-    height: auto; }
-    .header .img img {
-      width: 35%;
-      height: 35%;
-      margin-left: 7em; }
-      .header .img img:hover {
-        -webkit-animation: roll 1s infinite;
-                animation: roll 1s infinite;
-        -webkit-transform: rotate(30deg);
-                transform: rotate(30deg); }
+  .header .title-bar {
+    border: 0px solid yellow;
+    background: #896d46; }
+    .header .title-bar .title-bar-left {
+      padding-top: 18px;
+      padding-left: 10px; }
+      .header .title-bar .title-bar-left button {
+        padding-left: 12px; }
   .principal {
-    padding: 0em; }
-    .principal .presentacion .img {
-      margin-top: -18em;
+    padding: 1em; }
+    .principal .presentacion {
       width: 100%;
-      height: 35vh;
-      overflow: hidden; }
-      .principal .presentacion .img img {
-        width: 100%; }
-    .principal .presentacion .text {
-      padding: 1.5em;
-      position: relative;
-      top: -50px;
-      margin-left: 2em;
-      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8); }
-      .principal .presentacion .text h1 {
-        font-family: 'Bad Script', cursive;
-        color: white;
-        text-align: center;
-        font-size: 1.6rem; }
-      .principal .presentacion .text h3 {
-        margin-top: 0em;
-        font-family: 'Bad Script', cursive;
-        color: yellow;
-        text-align: center;
-        font-size: 1.8rem; }
-        .principal .presentacion .text h3 .letra {
-          font-size: 2.2rem; }
-      .principal .presentacion .text .button.hollow {
-        font-size: 1em;
-        margin-top: 1.5em;
-        margin-left: 5em;
-        font-family: 'Bad Script', cursive;
-        text-align: center;
-        border: 1px solid white;
-        color: white; }
-        .principal .presentacion .text .button.hollow:hover {
-          border: 1px solid yellow;
-          color: yellow; }
-    .principal .home2 {
-      padding: 0em; }
-      .principal .home2 .callout {
-        border: none;
-        background: none;
-        height: 500px; }
-        .principal .home2 .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home2 .title {
-        text-align: center;
-        font-size: 3.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home2 .title i {
-          font-size: 2rem; }
-      .principal .home2 .description {
-        padding: 0 1em;
-        text-align: justify;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-    .principal .home {
-      padding: 1em; }
-      .principal .home .foo {
-        border: 2px solid red;
-        height: 600px; }
-      .principal .home .bar {
-        border: 2px solid red;
-        height: 400px; }
-      .principal .home .callout {
-        border: none;
-        background: none; }
-        .principal .home .callout img {
-          width: 100%;
-          height: 32vh; }
-      .principal .home .title {
-        text-align: center;
-        font-size: 3.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home .title i {
-          font-size: 2rem; }
-      .principal .home .description {
-        padding: 0 1em;
-        text-align: justify;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
+      height: auto;
+      padding-left: 1.5em; }
+    .principal .home3 {
+      padding: 2em; }
+      .principal .home3 .columns {
+        height: 320px; }
+      .principal .home3 h2 {
+        font-size: 2.6rem;
+        color: black;
+        font-family: 'PT Sans', sans-serif; }
+      .principal .home3 .owl-demo .item {
+        margin: 1px; }
+      .principal .home3 .owl-demo .item img {
+        display: block;
+        width: 100%;
+        height: 35vh; }
+  .home2 {
+    padding: 2em;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75); }
+    .home2 .columns {
+      height: 320px; }
+    .home2 p {
+      text-align: center;
+      font-size: 2.6rem;
+      color: black;
+      font-family: 'PT Sans', sans-serif; }
+    .home2 img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 30vh; }
+  .home {
+    padding: 2em; }
+    .home .columns {
+      height: 320px; }
+    .home p {
+      text-align: center;
+      font-size: 2.6rem;
+      color: black;
+      font-family: 'PT Sans', sans-serif; }
+    .home img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 30vh; }
   .asociados .selector span {
     font-family: 'PT Sans', sans-serif;
     font-size: 1.9rem;
@@ -3601,125 +3494,78 @@ table.hover tr:nth-of-type(even):hover {
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /*@media only screen and (max-width: 40em) { } */
 @media only screen and (min-width: 40.063em) {
-  .header .callout {
-    border: none;
-    background: none; }
-  .header .men .top-bar {
-    background: none;
-    border-bottom: 13px solid #EBEBEB; }
-  .header .men .menu {
-    position: relative;
-    background: none; }
-    .header .men .menu a {
-      padding: 1em;
-      font-family: 'PT Sans', sans-serif;
-      font-size: 1.4rem;
-      color: #2D2D2D;
-      text-transform: uppercase; }
-      .header .men .menu a:hover {
-        font-weight: bold; }
-      .header .men .menu a i {
-        padding-right: 1.5em; }
-  .header .title-bar {
-    background: #cf992e; }
-    .header .title-bar ul {
+  .header {
+    border-top: 13px solid #EBEBEB; }
+    .header .callout {
+      height: 30vh; }
+    .header .top-bar {
       background: none; }
-  .header .img {
-    width: auto;
-    height: auto; }
-    .header .img img {
-      width: 35%;
-      height: 35%;
-      margin: 0 15em; }
-      .header .img img:hover {
-        -webkit-animation: roll 4s infinite;
-                animation: roll 4s infinite;
-        -webkit-transform: rotate(30deg);
-                transform: rotate(30deg); }
-  .principal {
-    padding: 0em; }
-    .principal .presentacion .img {
-      margin-top: -27em;
-      width: 100%;
-      height: 55vh;
-      overflow: hidden; }
-      .principal .presentacion .img img {
-        width: 100%; }
-    .principal .presentacion .text {
-      padding: 1.5em;
-      position: relative;
-      top: 45px;
-      margin-left: 2em;
-      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8); }
-      .principal .presentacion .text h1 {
-        font-family: 'Bad Script', cursive;
-        color: white;
-        text-align: center;
-        font-size: 3.6rem; }
-      .principal .presentacion .text h3 {
-        margin-top: 1em;
-        font-family: 'Bad Script', cursive;
-        color: yellow;
-        text-align: center;
-        font-size: 2.8rem; }
-        .principal .presentacion .text h3 .letra {
-          font-size: 3.2rem; }
-      .principal .presentacion .text .button.hollow {
-        font-size: 1em;
-        margin-top: 1.5em;
-        margin-left: 20em;
-        font-family: 'Bad Script', cursive;
-        text-align: center;
-        border: 1px solid white;
-        color: white; }
-        .principal .presentacion .text .button.hollow:hover {
-          border: 1px solid yellow;
-          color: yellow; }
-    .principal .home2 {
-      padding: 0em; }
-      .principal .home2 .callout {
-        border: none;
-        background: none;
-        height: 500px; }
-        .principal .home2 .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home2 .title {
-        text-align: center;
-        font-size: 3.5rem;
-        font-family: 'Bad Script', cursive; }
-        .principal .home2 .title i {
-          font-size: 2rem; }
-      .principal .home2 .description {
-        padding: 0 1em;
-        text-align: justify;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-    .principal .home {
-      padding: 1em; }
-      .principal .home .foo {
-        border: 2px solid red;
-        height: 600px; }
-      .principal .home .bar {
-        border: 2px solid red;
-        height: 400px; }
-      .principal .home .callout {
-        border: none;
+      .header .top-bar ul {
         background: none; }
-        .principal .home .callout img {
-          width: 100%;
-          height: 32vh; }
-      .principal .home .title {
-        text-align: center;
-        font-size: 3.5rem;
-        font-family: 'Bad Script', cursive; }
-        .principal .home .title i {
-          font-size: 2rem; }
-      .principal .home .description {
-        padding: 0 1em;
-        text-align: justify;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
+    .header .img {
+      position: relative;
+      width: 40vw;
+      left: 7.5em;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75); }
+    .header .menu {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 0em; }
+      .header .menu a {
+        font-size: 1.4rem;
+        color: #2D2D2D;
+        text-transform: uppercase;
+        border-bottom: 0em solid #C59C64; }
+        .header .menu a:hover {
+          border-bottom: 3px solid #CC9029; }
+  .principal {
+    padding: 1.5em; }
+    .principal .presentacion {
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+    .principal .home3 h2 {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 2.6rem;
+      text-align: center;
+      color: black;
+      font-weight: 200; }
+    .principal .home3 .owl-demo .item {
+      margin: 3px; }
+    .principal .home3 .owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: 30vh; }
+  .home2 {
+    padding: 2em;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75); }
+    .home2 p {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 2.6rem;
+      text-align: center;
+      color: black;
+      font-weight: 200; }
+    .home2 .columns {
+      height: 360px; }
+    .home2 img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 35vh; }
+  .home {
+    padding: 2em; }
+    .home p {
+      font-family: 'PT Sans', sans-serif;
+      font-size: 2.6rem;
+      text-align: center;
+      color: black;
+      font-weight: 200; }
+    .home .columns {
+      height: 360px; }
+    .home img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 35vh; }
   .asociados .selector span {
     font-family: 'PT Sans', sans-serif;
     font-size: 2.2rem;
@@ -3890,143 +3736,66 @@ table.hover tr:nth-of-type(even):hover {
   .header {
     border-top: 13px solid #EBEBEB; }
     .header .callout {
-      border: none;
-      background: none; }
-    .header .men {
-      z-index: 999; }
-      .header .men .top-bar {
-        background: none;
-        border-bottom: 0px solid #EBEBEB; }
-      .header .men .menu {
-        position: absolute;
-        margin-bottom: 4em;
-        bottom: 0;
-        right: 0; }
-        .header .men .menu a {
-          padding: 0.6em;
-          font-family: 'PT Sans', sans-serif;
-          font-size: 1.2rem;
-          color: #2D2D2D;
-          text-transform: uppercase; }
-          .header .men .menu a:hover {
-            font-weight: bold; }
-          .header .men .menu a i {
-            padding-right: 0em; }
-    .header .men2 {
-      z-index: 999; }
-      .header .men2 .menu {
-        position: absolute;
-        margin-bottom: 4em;
-        bottom: 0;
-        left: 0; }
-        .header .men2 .menu a {
-          padding: 0.6em;
-          font-family: 'PT Sans', sans-serif;
-          font-size: 1.2rem;
-          color: #2D2D2D;
-          text-transform: uppercase; }
-          .header .men2 .menu a:hover {
-            font-weight: bold; }
-          .header .men2 .menu a i {
-            padding-right: 0em; }
+      height: 30vh; }
     .header .top-bar {
       background: none; }
       .header .top-bar ul {
         background: none; }
     .header .img {
-      width: auto;
-      height: auto; }
-      .header .img img {
-        width: 70%;
-        height: 70%;
-        margin-left: 1.5em; }
-  .principal {
-    padding: 0em; }
-    .principal .presentacion .img {
-      margin-top: -4.5em;
-      width: 100%;
-      height: 89vh;
-      overflow: hidden; }
-      .principal .presentacion .img img {
-        width: 100%; }
-    .principal .presentacion .text {
-      padding: 1.5em;
+      position: relative;
+      left: 7.5em;
+      width: 30vw;
+      height: 30vh;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75); }
+    .header .menu {
       position: absolute;
-      top: 250px;
-      margin-left: 18em;
-      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8); }
-      .principal .presentacion .text h1 {
-        font-family: 'Bad Script', cursive;
-        color: white;
-        text-align: center;
-        font-size: 5rem; }
-      .principal .presentacion .text h3 {
-        margin-top: 1em;
-        font-family: 'Bad Script', cursive;
-        color: yellow;
-        text-align: center;
-        font-size: 3.8rem; }
-        .principal .presentacion .text h3 .letra {
-          font-size: 4.2rem; }
-      .principal .presentacion .text .button.hollow {
-        font-size: 1.9em;
-        margin-top: 1.2em;
-        margin-left: 5em;
-        font-family: 'Bad Script', cursive;
-        text-align: center;
-        border: 1px solid white;
-        color: white; }
-        .principal .presentacion .text .button.hollow:hover {
-          border: 1px solid yellow;
-          color: yellow; }
-    .principal .home2 {
-      padding: 0em 1em 1em 1em; }
-      .principal .home2 .callout {
-        border: none;
-        background: none;
-        height: 450px; }
-        .principal .home2 .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home2 .title {
-        text-align: center;
-        font-size: 4.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home2 .title i {
-          font-size: 3rem; }
-      .principal .home2 .description {
-        padding: 0 1em;
-        text-align: justify;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 1em; }
+      .header .menu a {
         font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-    .principal .home {
-      padding: 2em 1em 1em 1em; }
-      .principal .home .callout {
-        border: none;
-        background: none;
-        height: 500px; }
-        .principal .home .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home .title {
-        text-align: center;
-        font-size: 4.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home .title i {
-          font-size: 3rem; }
-      .principal .home .description {
-        padding: 0 1em;
-        text-align: justify;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-  .contacto .title {
-    text-align: center;
-    font-size: 4.5rem;
-    font-family: 'Bad Script', cursive; }
-    .contacto .title i {
-      font-size: 3rem; }
+        font-size: 1.7rem;
+        color: #2D2D2D;
+        text-transform: uppercase;
+        border-bottom: 0em solid #C59C64; }
+        .header .menu a:hover {
+          border-bottom: 3px solid #CC9029; }
+  .principal {
+    padding: 1.5em; }
+    .principal .presentacion {
+      width: 100%;
+      height: 60vh;
+      overflow: hidden; }
+      .principal .presentacion img {
+        margin-top: -3em; }
+    .principal .home3 h2 {
+      font-size: 2.6rem;
+      color: black;
+      text-align: center;
+      font-family: 'PT Sans', sans-serif; }
+    .principal .home3 .owl-demo .item {
+      margin: 3px; }
+    .principal .home3 .owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: 35vh; }
+  .home2 {
+    padding: 2em;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75); }
+    .home2 .columns {
+      height: 360px; }
+    .home2 img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 40vh; }
+  .home {
+    padding: 2em; }
+    .home .columns {
+      height: 360px; }
+    .home img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 40vh; }
   .asociados .selector span {
     font-family: 'PT Sans', sans-serif;
     font-size: 2.6rem;
@@ -4192,143 +3961,66 @@ table.hover tr:nth-of-type(even):hover {
   .header {
     border-top: 13px solid #EBEBEB; }
     .header .callout {
-      border: none;
-      background: none; }
-    .header .men {
-      z-index: 999; }
-      .header .men .top-bar {
-        background: none;
-        border-bottom: 0px solid #EBEBEB; }
-      .header .men .menu {
-        position: absolute;
-        margin-bottom: 4em;
-        bottom: 0;
-        right: 0; }
-        .header .men .menu a {
-          padding: 0.6em;
-          font-family: 'PT Sans', sans-serif;
-          font-size: 1.2rem;
-          color: #2D2D2D;
-          text-transform: uppercase; }
-          .header .men .menu a:hover {
-            font-weight: bold; }
-          .header .men .menu a i {
-            padding-right: 0em; }
-    .header .men2 {
-      z-index: 999; }
-      .header .men2 .menu {
-        position: absolute;
-        margin-bottom: 4em;
-        bottom: 0;
-        left: 0; }
-        .header .men2 .menu a {
-          padding: 0.6em;
-          font-family: 'PT Sans', sans-serif;
-          font-size: 1.2rem;
-          color: #2D2D2D;
-          text-transform: uppercase; }
-          .header .men2 .menu a:hover {
-            font-weight: bold; }
-          .header .men2 .menu a i {
-            padding-right: 0em; }
+      height: 30vh; }
     .header .top-bar {
       background: none; }
       .header .top-bar ul {
         background: none; }
     .header .img {
-      width: auto;
-      height: auto; }
-      .header .img img {
-        width: 70%;
-        height: 70%;
-        margin-left: 1.5em; }
-  .principal {
-    padding: 0em; }
-    .principal .presentacion .img {
-      margin-top: -4.5em;
-      width: 100%;
-      height: 89vh;
-      overflow: hidden; }
-      .principal .presentacion .img img {
-        width: 100%; }
-    .principal .presentacion .text {
-      padding: 1.5em;
+      position: relative;
+      left: 7.5em;
+      width: 30vw;
+      height: 30vh;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75); }
+    .header .menu {
       position: absolute;
-      top: 250px;
-      margin-left: 18em;
-      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8); }
-      .principal .presentacion .text h1 {
-        font-family: 'Bad Script', cursive;
-        color: white;
-        text-align: center;
-        font-size: 5rem; }
-      .principal .presentacion .text h3 {
-        margin-top: 1em;
-        font-family: 'Bad Script', cursive;
-        color: yellow;
-        text-align: center;
-        font-size: 3.8rem; }
-        .principal .presentacion .text h3 .letra {
-          font-size: 4.2rem; }
-      .principal .presentacion .text .button.hollow {
-        font-size: 1.9em;
-        margin-top: 1.2em;
-        margin-left: 5em;
-        font-family: 'Bad Script', cursive;
-        text-align: center;
-        border: 1px solid white;
-        color: white; }
-        .principal .presentacion .text .button.hollow:hover {
-          border: 1px solid yellow;
-          color: yellow; }
-    .principal .home2 {
-      padding: 0em 1em 1em 1em; }
-      .principal .home2 .callout {
-        border: none;
-        background: none;
-        height: 450px; }
-        .principal .home2 .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home2 .title {
-        text-align: center;
-        font-size: 4.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home2 .title i {
-          font-size: 3rem; }
-      .principal .home2 .description {
-        padding: 0 1em;
-        text-align: justify;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 1em; }
+      .header .menu a {
         font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-    .principal .home {
-      padding: 2em 1em 1em 1em; }
-      .principal .home .callout {
-        border: none;
-        background: none;
-        height: 500px; }
-        .principal .home .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home .title {
-        text-align: center;
-        font-size: 4.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home .title i {
-          font-size: 3rem; }
-      .principal .home .description {
-        padding: 0 1em;
-        text-align: justify;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-  .contacto .title {
-    text-align: center;
-    font-size: 4.5rem;
-    font-family: 'Bad Script', cursive; }
-    .contacto .title i {
-      font-size: 3rem; }
+        font-size: 1.7rem;
+        color: #2D2D2D;
+        text-transform: uppercase;
+        border-bottom: 0em solid #C59C64; }
+        .header .menu a:hover {
+          border-bottom: 3px solid #CC9029; }
+  .principal {
+    padding: 1.5em; }
+    .principal .presentacion {
+      width: 100%;
+      height: 60vh;
+      overflow: hidden; }
+      .principal .presentacion img {
+        margin-top: -3em; }
+    .principal .home3 h2 {
+      font-size: 2.6rem;
+      color: black;
+      text-align: center;
+      font-family: 'PT Sans', sans-serif; }
+    .principal .home3 .owl-demo .item {
+      margin: 3px; }
+    .principal .home3 .owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: 35vh; }
+  .home2 {
+    padding: 2em;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75); }
+    .home2 .columns {
+      height: 360px; }
+    .home2 img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 40vh; }
+  .home {
+    padding: 2em; }
+    .home .columns {
+      height: 360px; }
+    .home img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 40vh; }
   .asociados .selector span {
     font-family: 'PT Sans', sans-serif;
     font-size: 2.6rem;
@@ -4494,143 +4186,66 @@ table.hover tr:nth-of-type(even):hover {
   .header {
     border-top: 13px solid #EBEBEB; }
     .header .callout {
-      border: none;
-      background: none; }
-    .header .men {
-      z-index: 999; }
-      .header .men .top-bar {
-        background: none;
-        border-bottom: 0px solid #EBEBEB; }
-      .header .men .menu {
-        position: absolute;
-        margin-bottom: 4em;
-        bottom: 0;
-        right: 0; }
-        .header .men .menu a {
-          padding: 0.6em;
-          font-family: 'PT Sans', sans-serif;
-          font-size: 1.2rem;
-          color: #2D2D2D;
-          text-transform: uppercase; }
-          .header .men .menu a:hover {
-            font-weight: bold; }
-          .header .men .menu a i {
-            padding-right: 0em; }
-    .header .men2 {
-      z-index: 999; }
-      .header .men2 .menu {
-        position: absolute;
-        margin-bottom: 4em;
-        bottom: 0;
-        left: 0; }
-        .header .men2 .menu a {
-          padding: 0.6em;
-          font-family: 'PT Sans', sans-serif;
-          font-size: 1.2rem;
-          color: #2D2D2D;
-          text-transform: uppercase; }
-          .header .men2 .menu a:hover {
-            font-weight: bold; }
-          .header .men2 .menu a i {
-            padding-right: 0em; }
+      height: 30vh; }
     .header .top-bar {
       background: none; }
       .header .top-bar ul {
         background: none; }
     .header .img {
-      width: auto;
-      height: auto; }
-      .header .img img {
-        width: 70%;
-        height: 70%;
-        margin-left: 1.5em; }
-  .principal {
-    padding: 0em; }
-    .principal .presentacion .img {
-      margin-top: -4.5em;
-      width: 100%;
-      height: 89vh;
-      overflow: hidden; }
-      .principal .presentacion .img img {
-        width: 100%; }
-    .principal .presentacion .text {
-      padding: 1.5em;
+      position: relative;
+      left: 7.5em;
+      width: 30vw;
+      height: 30vh;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75); }
+    .header .menu {
       position: absolute;
-      top: 250px;
-      margin-left: 18em;
-      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8); }
-      .principal .presentacion .text h1 {
-        font-family: 'Bad Script', cursive;
-        color: white;
-        text-align: center;
-        font-size: 5rem; }
-      .principal .presentacion .text h3 {
-        margin-top: 1em;
-        font-family: 'Bad Script', cursive;
-        color: yellow;
-        text-align: center;
-        font-size: 3.8rem; }
-        .principal .presentacion .text h3 .letra {
-          font-size: 4.2rem; }
-      .principal .presentacion .text .button.hollow {
-        font-size: 1.9em;
-        margin-top: 1.2em;
-        margin-left: 5em;
-        font-family: 'Bad Script', cursive;
-        text-align: center;
-        border: 1px solid white;
-        color: white; }
-        .principal .presentacion .text .button.hollow:hover {
-          border: 1px solid yellow;
-          color: yellow; }
-    .principal .home2 {
-      padding: 0em 1em 1em 1em; }
-      .principal .home2 .callout {
-        border: none;
-        background: none;
-        height: 450px; }
-        .principal .home2 .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home2 .title {
-        text-align: center;
-        font-size: 4.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home2 .title i {
-          font-size: 3rem; }
-      .principal .home2 .description {
-        padding: 0 1em;
-        text-align: justify;
+      bottom: 0;
+      left: 0;
+      padding-bottom: 1em; }
+      .header .menu a {
         font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-    .principal .home {
-      padding: 2em 1em 1em 1em; }
-      .principal .home .callout {
-        border: none;
-        background: none;
-        height: 500px; }
-        .principal .home .callout img {
-          width: 30vw;
-          height: 32vh; }
-      .principal .home .title {
-        text-align: center;
-        font-size: 4.5rem;
-        font-family: 'Bad Script', cursive;
-        border-bottom: 4px solid #CC9029; }
-        .principal .home .title i {
-          font-size: 3rem; }
-      .principal .home .description {
-        padding: 0 1em;
-        text-align: justify;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 1.2rem; }
-  .contacto .title {
-    text-align: center;
-    font-size: 4.5rem;
-    font-family: 'Bad Script', cursive; }
-    .contacto .title i {
-      font-size: 3rem; }
+        font-size: 1.7rem;
+        color: #2D2D2D;
+        text-transform: uppercase;
+        border-bottom: 0em solid #C59C64; }
+        .header .menu a:hover {
+          border-bottom: 3px solid #CC9029; }
+  .principal {
+    padding: 1.5em; }
+    .principal .presentacion {
+      width: 100%;
+      height: 60vh;
+      overflow: hidden; }
+      .principal .presentacion img {
+        margin-top: -3em; }
+    .principal .home3 h2 {
+      font-size: 2.6rem;
+      color: black;
+      text-align: center;
+      font-family: 'PT Sans', sans-serif; }
+    .principal .home3 .owl-demo .item {
+      margin: 3px; }
+    .principal .home3 .owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: 35vh; }
+  .home2 {
+    padding: 2em;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75); }
+    .home2 .columns {
+      height: 360px; }
+    .home2 img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 40vh; }
+  .home {
+    padding: 2em; }
+    .home .columns {
+      height: 360px; }
+    .home img {
+      border: 8px solid #EBEBEB;
+      width: 100%;
+      height: 40vh; }
   .asociados .selector span {
     font-family: 'PT Sans', sans-serif;
     font-size: 2.6rem;

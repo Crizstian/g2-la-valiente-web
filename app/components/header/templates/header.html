@@ -1,10 +1,16 @@
 <div class="header">
   <div class="expanded row" data-equalizer data-equalize-by-row="true">
+    <div class="large-6 column">
+      <div class="callout" data-equalizer-watch="" style="">
+        <div class="img">
+          <img src="../app/img/v2/logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="large-6 column">
+      <div class="callout" data-equalizer-watch="" style="">
 
-    <div class="large-5 column">
-      <div class="callout men" data-equalizer-watch="" style="">
-
-        <div class="title-bar " data-responsive-toggle="example-menu">
+        <div class="title-bar show-for-small-only" data-responsive-toggle="example-menu">
           <button class="menu-icon" type="button" data-toggle></button>
           <div class="title-bar-title">Menu</div>
         </div>
@@ -14,27 +20,22 @@
             <ul class="vertical medium-horizontal menu">
               <li>
                 <a [routerLink]="['/Home']" >
-                 <span class=""><i class="mdi mdi-home-variant"></i></span> Bienvenida
+                 <span class="show-for-small-only"><i class="mdi mdi-home"></i></span> Home
                 </a>
               </li>
               <li>
                 <a [routerLink]="['/Asociados']" >
-                  <span class=""><i class="mdi mdi-keyboard-variant"></i></span> Historia
+                <span class="show-for-small-only"><i class="mdi mdi-library"></i></span> Asociados
                 </a>
               </li>
               <li>
                 <a [routerLink]="['/Nosotros']" >
-                   <span class=""><i class="mdi mdi-account-multiple"></i></span> Nosotros
+                  <span class="show-for-small-only"><i class="mdi mdi-account-multiple"></i></span> Nosotros
                 </a>
               </li>
-              <li class="show-for-medium-only show-for-small">
-                <a data-open="noticias" >
-                  <span class=""><i class="mdi mdi-book-open"></i></span> Recetas
-                </a>
-              </li>
-              <li class="show-for-medium-only show-for-small">
+              <li>
                 <a [routerLink]="['/Contacto']" >
-                   <span class=""><i class="mdi mdi-contact-mail"></i></span> Contacto
+                   <span class="show-for-small-only"><i class="mdi mdi-account-box"></i></span> Contacto
                 </a>
               </li>
             </ul>
@@ -42,44 +43,4 @@
         </div>
     </div>
   </div>
-
-
-    <div class="large-3 column">
-      <div class="callout img" data-equalizer-watch="" style="">
-        <div class="img">
-          <img src="../app/img/v3/nuevo/logo.png" alt="" />
-        </div>
-      </div>
-    </div>
-
-
-  <div class="large-4 column show-for-large">
-    <div class="callout men2" data-equalizer-watch="" style="">
-
-      <div class="top-bar" id="example-menu">
-        <div class="top-bar-left">
-          <ul class="vertical medium-horizontal menu">
-            <li>
-              <a data-open="noticias" >
-                <span class=""><i class="mdi mdi-book-open"></i></span> Recetas
-              </a>
-            </li>
-            <li>
-              <a [routerLink]="['/Contacto']" >
-                 <span class=""><i class="mdi mdi-contact-mail"></i></span> Contacto
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </div>
-</div>
-</div>
-<div class="reveal" id="noticias" data-reveal>
-  <h1>La Valiente</h1>
-  <p class="lead">Gracias por vistarnos.</p>
-  <p>Más información proximamente!</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
 </div>

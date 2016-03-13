@@ -1,83 +1,132 @@
 <div class="principal">
   <div class="expanded row">
     <div class="presentacion">
-      <div class="text">
-        <div class="animation-element slide-right">
-          <h1>
-            La Valiente
-          </h1>
-          <h3 align="center"><span class="letra">A</span>l chile... las cosas como son</h3>
-        </div>
-        <span class="tiny secondary hollow button animation-element slide-left">
-          <i class="mdi mdi-arrow-right"></i> más sobre nosotros... <i class="mdi mdi-arrow-left"></i>
-        </span>
+      <img class="show-for-large" src="../app/img/v3/extra/Lay1.jpg" alt="Owl Image">
+      <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay1.jpg" alt="Owl Image">
+      <img class="show-for-small-only" src="../app/img/v3/small/Lay1.jpg" alt="Owl Image">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="small-3 small-centered columns" style="border-bottom: 5px solid #CC9029;"></div>
+  </div>
+  <div class="expanded row home3">
+    <div class="row">
+      <div class="small-6 small-centered">
+        <h2>Asociados</h2>
       </div>
-      <div class="img">
-        <img src="../app/img/v3/nuevo/fondo-2.jpg" alt="" />
+    </div>
+    <div id="owl-demo-home" class="owl-demo">
+      <div class="item" *ngFor="#asociado of getAsociados | async">
+        <a [routerLink]="['/Asociado',{id: asociado.id}]" >
+          <img src="../app/img/{{asociado.logo}}" alt="" />
+        </a>
       </div>
     </div>
   </div>
   <br>
+  <div class="row">
+    <div class="small-3 small-centered columns" style="border-bottom: 5px solid #CC9029;"></div>
+  </div>
+  <div class="expanded row small-up-1 medium-up-2 large-up-3 home" data-equalizer data-equalize-by-row="true">
 
-  <div class="row home "  data-equalize-on="medium" data-events="resize">
-    <div class="medium-6 columns">
-      <div class="callout foo" data-equalizer-watch="" >
-        <p class="title animation-element bounce-up">
-          <i class="mdi mdi-worker"></i> Misión
-        </p>
-        <div class="row">
-          <div class="small-3 small-centered columns" style="border-bottom: 5px solid #CC9029;"></div>
-        </div>
-        <p class="description animation-element slide-left">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-    <div class="medium-6 columns">
-      <div class="callout bar animation-element bounce-up" data-equalizer-watch="">
-        <a [routerLink]="['/Contacto']" >
-          <img class="" src="../app/img/v3/nuevo/logo.png" alt="Owl Image">
+    <div class="columns" data-equalizer-watch="" style="">
+      <div class="row">
+        <a [routerLink]="['/Nosotros']" >
+          <img class="show-for-large" src="../app/img/v3/grande/Lay10.jpg" alt="Owl Image">
+          <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay10.jpg" alt="Owl Image">
+          <img class="show-for-small-only" src="../app/img/v3/small/Lay10.jpg" alt="Owl Image">
         </a>
       </div>
-    </div>
-  </div>
-
-  <div class="row home2"  data-equalize-on="medium" id="test-eq" data-events="resize">
-    <div class="medium-6 medium-centered columns">
-      <div class="callout" data-equalizer-watch="" >
+      <div class="row">
         <p class="title">
-          Visión <i class="mdi mdi-trophy-award"></i>
-        </p>
-        <div class="row">
-          <div class="small-3 small-centered columns" style="border-bottom: 5px solid #CC9029;"></div>
-        </div>
-        <p class="description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Nosotros
         </p>
       </div>
     </div>
-  </div>
-  <div class="row home"  data-equalize-on="medium" data-events="resize">
-    <div class="medium-6 columns">
-      <div class="callout bar animation-element bounce-up" data-equalizer-watch="">
-        <a [routerLink]="['/Contacto']" >
-          <img class="" src="../app/img/v3/nuevo/logo.png" alt="Owl Image">
+
+    <div class="columns" data-equalizer-watch="" style="">
+      <div class="row">
+        <a [routerLink]="['/Asociados']" >
+          <img class="show-for-large" src="../app/img/v3/grande/Lay2.jpg" alt="Owl Image">
+          <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay2.jpg" alt="Owl Image">
+          <img class="show-for-small-only" src="../app/img/v3/small/Lay2.jpg" alt="Owl Image">
         </a>
       </div>
-    </div>
-    <div class="medium-6 columns">
-      <div class="callout foo" data-equalizer-watch="" >
-        <p class="title animation-element bounce-up">
-          <i class="mdi mdi-leaf"></i> Valores
-        </p>
-        <div class="row">
-          <div class="small-3 small-centered columns" style="border-bottom: 5px solid #CC9029;"></div>
-        </div>
-        <p class="description animation-element slide-left">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="row">
+        <p class="title">
+          Asociados
         </p>
       </div>
     </div>
+
+    <div class="columns" data-equalizer-watch="" >
+      <div class="row">
+          <a data-open="tienda">
+            <img class="show-for-large" src="../app/img/v3/grande/Lay3.jpg" alt="Owl Image">
+            <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay3.jpg" alt="Owl Image">
+            <img class="show-for-small-only" src="../app/img/v3/small/Lay3.jpg" alt="Owl Image">
+          </a>
+      </div>
+      <div class="row">
+        <p class="title">
+          Tienda en linea
+        </p>
+      </div>
+    </div>
+
   </div>
   <br><br>
+  <div class="row">
+    <div class="small-3 small-centered columns" style="border-bottom: 6px solid #CC9029;"></div>
+  </div>
+  <div class="expanded row small-up-1 medium-up-2 home2" data-equalizer data-equalize-by-row="true">
+    <div class="columns" data-equalizer-watch="" style="">
+      <div class="row">
+        <a data-open="noticias">
+          <img class="show-for-large" src="../app/img/v3/grande/Lay7.jpg" alt="Owl Image">
+          <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay7.jpg" alt="Owl Image">
+          <img class="show-for-small-only" src="../app/img/v3/small/Lay7.jpg" alt="Owl Image">
+        </a>
+      </div>
+      <div class="row">
+        <p class="title">
+          Noticias
+        </p>
+      </div>
+    </div>
+    <div class="columns" data-equalizer-watch="" style="">
+      <div class="row">
+        <a [routerLink]="['/Contacto']" >
+          <img class="show-for-large" src="../app/img/v3/grande/Lay9.jpg" alt="Owl Image">
+          <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay9.jpg" alt="Owl Image">
+          <img class="show-for-small-only" src="../app/img/v3/small/Lay9.jpg" alt="Owl Image">
+        </a>
+      </div>
+      <div class="row">
+        <p class="title">
+          Contacto
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<div class="reveal" id="tienda" data-reveal>
+  <h1>Cerarmich</h1>
+  <p class="lead">Gracias por vistarnos.</p>
+  <p>Tienda en linea proximamente!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="reveal" id="noticias" data-reveal>
+  <h1>Cerarmich</h1>
+  <p class="lead">Gracias por vistarnos.</p>
+  <p>Blog proximamente!</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>

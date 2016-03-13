@@ -1,26 +1,28 @@
 <div class="principal">
   <div class="expanded row">
     <div class="presentacion">
-      <div class="img">
-        <img class="" src="../app/img/v3/nuevo/nosotros2.jpg" alt="Owl Image">
-      </div>
+      <img class="show-for-large" src="../app/img/v3/extra/Lay13.jpg" alt="Owl Image">
+      <img class="show-for-medium-only" src="../app/img/v3/mediano/Lay13.jpg" alt="Owl Image">
+      <img class="show-for-small-only" src="../app/img/v3/small/Lay13.jpg" alt="Owl Image">
     </div>
   </div>
 </div>
 
-<div class="expanded row nosotros">
-
+<div class="asociados">
+  <br>
   <div class="row">
-      <div class="medium-10 medium-centered columns animation-element bounce-up">
-        <p class="title">
-          <i class="mdi mdi-book-open"></i> Historia
-        </p>
+    <div class="large-6 large-centered columns selector">
+      <label><span>Seleccionar Asociado</span>
         <div class="row">
           <div class="small-3 small-centered columns" style="border-bottom: 3px solid #CC9029;"></div>
         </div>
-        <p class="description">
-          Ser una asociación con presencia a nivel nacional en la producción de cerveza artesanal e insumos para su elaboración de calidad, promoviendo la unión y apoyo de todos los cerveceros michoacanos, que fomenten la cultura de consumo responsable y aporte al crecimiento económico y turístico del estado de Michoacán.
-        </p>
-      </div>
+        <br>
+        <asociado-select (select)="status = $event"></asociado-select>
+      </label>
+    </div>
+  </div>
+
+  <div class="expanded row asoc1">
+    <asociado-list [status]="status"></asociado-list>
   </div>
 </div>
